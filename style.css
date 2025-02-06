@@ -1,0 +1,24 @@
+/* 全局样式 */
+body {
+    font-family: Arial, sans-serif; /* 统一字体 */
+    background-color: #f4f4f4; /* 背景色 */
+    text-align: center; /* 文字居中 */
+    padding: 20px;
+}
+
+/* 标题样式 */
+h1 {
+    color: #333;
+}
+
+/* 文本段落样式 */
+p {
+    font-size: 18px;
+    color: #666;
+}
+
+/* 图片样式 */
+img {
+    width: 150px;
+    border-radius: 50%; /* 让图片变成圆形 */
+}
