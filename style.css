@@ -2,70 +2,101 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-}
-
-body {
-    background-color: #111;
-    color: white;
     font-family: Arial, sans-serif;
 }
 
-.container {
-    width: 100%;
-    height: 100vh;
+body {
+    background-color: white;
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: start;
+    justify-content: center;
+    min-height: 100vh;
 }
 
 .navbar {
     width: 100%;
-    background-color: #222;
+    background: #333;
     padding: 10px 0;
+    position: fixed;
+    top: 0;
+    left: 0;
     text-align: center;
 }
 
 .navbar ul {
     list-style: none;
-    display: flex;
-    justify-content: center;
+    padding: 0;
 }
 
-.navbar li {
+.navbar ul li {
+    display: inline;
     margin: 0 15px;
 }
 
-.navbar a {
-    text-decoration: none;
+.navbar ul li a {
     color: white;
+    text-decoration: none;
     font-size: 18px;
-    padding: 5px 10px;
-    transition: 0.3s;
 }
 
-.navbar a:hover {
-    background-color: #444;
-    border-radius: 5px;
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-top: 80px;
 }
 
 .profile {
-    position: relative;
-    width: 100%;
-    max-width: 600px;
+    background: #222;
+    padding: 20px;
+    border-radius: 15px;
     text-align: center;
-    margin-top: 20px;
+    width: 400px;
+    position: relative;
 }
 
 .background img {
     width: 100%;
-    height: 200px;
-    object-fit: cover;
-    border-radius: 10px;
+    border-radius: 15px;
 }
 
 .avatar {
     position: absolute;
+    top: 50px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 3px solid white;
+}
+
+.avatar img {
+    width: 100%;
+}
+
+.username {
+    margin-top: 60px;
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+}
+
+.handle {
+    font-size: 14px;
+    color: #bbb;
+}
+
+.bubble {
+    width: 80%;
+    height: 80px;
+    background: rgba(255, 255, 255, 0.1);
+    margin: 20px auto;
+    border-radius: 10px;
+}
     top: 130px;
     left: 50%;
     transform: translateX(-50%);
