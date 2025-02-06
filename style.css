@@ -1,24 +1,37 @@
-/* 全局样式 */
 body {
-    font-family: Arial, sans-serif; /* 统一字体 */
-    background-color: #f4f4f4; /* 背景色 */
-    text-align: center; /* 文字居中 */
-    padding: 20px;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    text-align: center;
 }
 
-/* 标题样式 */
-h1 {
-    color: #333;
+header {
+    background-color: black;
+    color: white;
+    padding: 15px;
 }
 
-/* 文本段落样式 */
-p {
-    font-size: 18px;
-    color: #666;
+nav ul {
+    list-style: none;
+    padding: 0;
 }
 
-/* 图片样式 */
-img {
-    width: 150px;
-    border-radius: 50%; /* 让图片变成圆形 */
+nav ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+main {
+    margin: 20px;
+}
+
+footer {
+    margin-top: 20px;
+    background-color: black;
+    color: white;
+    padding: 10px;
 }
